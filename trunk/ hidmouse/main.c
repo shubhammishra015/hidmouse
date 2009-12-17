@@ -8,16 +8,13 @@
 
 
 /** INCLUDES *******************************************************/
-#include <delays.h>
-#include <adc.h>
-
-#include "GenericTypeDefs.h"
-#include "Compiler.h"
-#include "usb_config.h"
-#include "./USB/usb_device.h"
 #include "./USB/usb.h"
 #include "HardwareProfile.h"
 #include "./USB/usb_function_hid.h"
+
+#include <delays.h>
+#include <adc.h>
+
 
 /** DEVICE CONFIGURATION *******************************************/
 /** PIC18Fx550 **/

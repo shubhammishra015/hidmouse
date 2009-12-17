@@ -8,8 +8,8 @@ dir_src=
 dir_bin=./Output
 dir_tmp=./Output
 dir_sin=
-dir_inc=C:\Microchip Solutions\Microchip\Include
-dir_lib=C:\MCC18\lib
+dir_inc=C:\MCC18\h;C:\Microchip Solutions\Microchip\Include
+dir_lib=C:\mcc18\lib
 dir_lkr=
 [CAT_FILTERS]
 filter_src=*.asm;*.c
@@ -18,19 +18,20 @@ filter_obj=*.o
 filter_lib=*.lib
 filter_lkr=*.lkr
 [CAT_SUBFOLDERS]
-subfolder_src=
-subfolder_inc=
+subfolder_src=USB Stack
+subfolder_inc=Common
 subfolder_obj=
 subfolder_lib=
 subfolder_lkr=
 [FILE_SUBFOLDERS]
 file_000=.
-file_001=.
-file_002=.
+file_001=USB Stack
+file_002=USB Stack
 file_003=.
 file_004=.
 file_005=.
-file_006=.
+file_006=Common
+file_007=Common
 [GENERATED_FILES]
 file_000=no
 file_001=no
@@ -39,6 +40,7 @@ file_003=no
 file_004=no
 file_005=no
 file_006=no
+file_007=no
 [OTHER_FILES]
 file_000=no
 file_001=no
@@ -47,21 +49,23 @@ file_003=no
 file_004=no
 file_005=no
 file_006=no
+file_007=no
 [FILE_INFO]
 file_000=usb_descriptors.c
 file_001=C:\Microchip Solutions\Microchip\Usb\usb_device.c
 file_002=C:\Microchip Solutions\Microchip\Usb\HID Device Driver\usb_function_hid.c
-file_003=main.c
-file_004=usb_config.h
-file_005=HardwareProfile.h
-file_006=C:\Microchip Solutions\Microchip\Include\Usb\usb_device.h
+file_003=D:\LAB\C18\18Fx550_USB_MOUSE\main.c
+file_004=HardwareProfile.h
+file_005=usb_config.h
+file_006=..\..\Microchip\Include\GenericTypeDefs.h
+file_007=..\..\Microchip\Include\Compiler.h
 [SUITE_INFO]
 suite_guid={5B7D72DD-9861-47BD-9F60-2BE967BF8416}
 suite_state=
 [TOOL_SETTINGS]
 TS{DD2213A8-6310-47B1-8376-9430CDFC013F}=
-TS{BFD27FBA-4A02-4C0E-A5E5-B812F3E7707C}=/o"$(BINDIR_)$(TARGETBASE).cof" /M"$(BINDIR_)$(TARGETBASE).map" /W
-TS{C2AF05E7-1416-4625-923D-E114DB6E2B96}=-Ou- -Ot- -Ob- -Op- -Or- -Od- -Opa-
+TS{BFD27FBA-4A02-4C0E-A5E5-B812F3E7707C}=/m"$(BINDIR_)$(TARGETBASE).map" /w /o"$(BINDIR_)$(TARGETBASE).cof"
+TS{C2AF05E7-1416-4625-923D-E114DB6E2B96}=-pa=4
 TS{ADE93A55-C7C7-4D4D-A4BA-59305F7D0391}=
 [INSTRUMENTED_TRACE]
 enable=0
